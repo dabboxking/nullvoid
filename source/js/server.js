@@ -16,7 +16,7 @@ import '../scss/app.scss';
 
 const app = express();
 const hostname = 'localhost';
-const port = process.env.PORT || 8080;
+const port = (process.env.PORT || 8080);
 
 app.use('/client', express.static('build/client'));
 
