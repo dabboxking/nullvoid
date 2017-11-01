@@ -5,7 +5,7 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "npm run client:build && npm run server:build",
+    "start": "npm run client:build",
     "dev": "webpack-dev-server",
     "postbuild": "webpack -p",
     "client:dev": "webpack-dashboard -t 'Marvin' -- webpack-dev-server",
