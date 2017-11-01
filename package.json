@@ -5,8 +5,9 @@
   "license": "MIT",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server",
-    "postbuild": "npm run clean && cross-env NODE_ENV=\"production\" webpack -p",
+    "start": "npm run clean && cross-env NODE_ENV=\"production\" webpack",
+    "dev": "webpack-dev-server",
+    "postbuild": "webpack -p",
     "client:dev": "webpack-dashboard -t 'Marvin' -- webpack-dev-server",
     "client:watch": "webpack",
     "client:build": "npm run clean && cross-env NODE_ENV=\"production\" webpack",
